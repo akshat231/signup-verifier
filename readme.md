@@ -1,10 +1,10 @@
-# 📧 verify-mail
+# 📧 signup-verifier
 
 > Send beautiful verification emails with OTPs on user signup, powered by Nodemailer.
 
-![npm](https://img.shields.io/npm/v/verify-mail)
-![License](https://img.shields.io/npm/l/verify-mail)
-![Downloads](https://img.shields.io/npm/dm/verify-mail)
+![npm](https://img.shields.io/npm/v/signup-verifier)
+![License](https://img.shields.io/npm/l/signup-verifier)
+![Downloads](https://img.shields.io/npm/dm/signup-verifier)
 
 ---
 
@@ -19,7 +19,7 @@
 ## 📦 Installation
 
 ```bash
-npm install verify-mail
+npm install signup-verifier
 ```
 
 ---
@@ -27,7 +27,7 @@ npm install verify-mail
 ## 🚀 Usage
 
 ```js
-const { sendVerificationEmail } = require('verify-mail');
+const { sendVerificationEmail } = require('signup-verifier');
 
 (async () => {
   try {

@@ -1,5 +1,5 @@
 {
-  "name": "verify-email",
+  "name": "signup-verifier",
   "version": "1.0.0",
   "description": "Send beautiful verification emails with OTPs on user signup.",
   "main": "index.js",
@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akshat231/verify-email"
+    "url": "git+https://github.com/akshat231/signup-verifier.git"
   },
   "bugs": {
-    "url": "https://github.com/akshat231/verify-email/issues"
+    "url": "https://github.com/akshat231/signup-verifier/issues"
   },
-  "homepage": "https://github.com/akshat231/verify-email#readme",
+  "homepage": "https://github.com/akshat231/signup-verifier#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
