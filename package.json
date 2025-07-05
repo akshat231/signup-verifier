@@ -1,6 +1,6 @@
 {
   "name": "signup-verifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send beautiful verification emails with OTPs on user signup.",
   "main": "index.js",
   "keywords": [
