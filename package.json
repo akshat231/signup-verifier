@@ -1,5 +1,5 @@
 {
-  "name": "verify-mail",
+  "name": "verify-email",
   "version": "1.0.0",
   "description": "Send beautiful verification emails with OTPs on user signup.",
   "main": "index.js",
@@ -11,10 +11,18 @@
     "nodemailer"
   ],
   "author": "Akshat Sharma <akshatsharmasde@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshat231/verify-email"
+  },
+  "bugs": {
+    "url": "https://github.com/akshat231/verify-email/issues"
+  },
+  "homepage": "https://github.com/akshat231/verify-email#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT",
   "dependencies": {
     "nodemailer": "^7.0.4"
   }
