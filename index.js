@@ -1,10 +1,30 @@
 const nodemailer = require('nodemailer');
 
 /**
+ * Generate a random OTP.
+ * @param {number} length - Length of the OTP
+ * @param {boolean} [numericOnly=true] - Whether to generate numeric-only OTP
+ * @returns {string} otp
+ */
+function generateOTP(length = 6, numericOnly = true) {
+  const digits = '0123456789';
+  const alphanum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const chars = numericOnly ? digits : alphanum;
+
+  let otp = '';
+  for (let i = 0; i < length; i++) {
+    otp += chars[Math.floor(Math.random() * chars.length)];
+  }
+
+  return otp;
+}
+
+/**
  * Send a verification email with an OTP.
  * @param {Object} smtpConfig - SMTP config: { host, port, secure, auth: { user, pass } }
  * @param {string} to - Recipient's email
  * @param {string} otp - The OTP code
+ * @param {string} sender - Sender name or label
  * @param {string} [subject='Verify your email'] - Subject
  * @returns {Promise} info - result from nodemailer
  */
@@ -34,4 +54,7 @@ async function sendVerificationEmail(smtpConfig, to, otp, sender, subject = 'Ver
   return info;
 }
 
-module.exports = { sendVerificationEmail };
+module.exports = {
+  sendVerificationEmail,
+  generateOTP
+};
