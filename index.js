@@ -54,7 +54,19 @@ async function sendVerificationEmail(smtpConfig, to, otp, sender, subject = 'Ver
   return info;
 }
 
+/**
+ * Mask an email address (e.g., j***@gmail.com)
+ * @param {string} email
+ * @returns {string} masked email
+ */
+function maskEmail(email) {
+  const [user, domain] = email.split('@');
+  if (user.length <= 1) return `*@${domain}`;
+  return `${user[0]}${'*'.repeat(user.length - 1)}@${domain}`;
+}
+
 module.exports = {
   sendVerificationEmail,
-  generateOTP
+  generateOTP,
+  maskEmail
 };
