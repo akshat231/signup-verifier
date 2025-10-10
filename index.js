@@ -67,6 +67,5 @@ function maskEmail(email) {
 
 module.exports = {
   sendVerificationEmail,
-  generateOTP,
   maskEmail
 };

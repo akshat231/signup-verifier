@@ -13,6 +13,7 @@
 - Simple API to send verification emails
 - Clean and professional HTML email template + plain text fallback
 - Works with any SMTP provider (Gmail, SendGrid, Mailgun, etc.)
+- Email masking for safe logging (maskEmail())
 
 ---
 
@@ -78,6 +79,8 @@ Your users will receive an email like:
 Styled with a clean HTML template for better readability.
 
 ---
+
+##
 
 ## 🛡 License
 
